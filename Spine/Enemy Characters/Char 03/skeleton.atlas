@@ -1,0 +1,160 @@
+
+skeleton.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 480, 318
+  size: 239, 189
+  orig: 239, 189
+  offset: 0, 0
+  index: -1
+Dfx1
+  rotate: true
+  xy: 613, 193
+  size: 123, 95
+  orig: 123, 95
+  offset: 0, 0
+  index: -1
+Dfx2
+  rotate: false
+  xy: 1674, 379
+  size: 162, 128
+  orig: 162, 128
+  offset: 0, 0
+  index: -1
+Dfx3
+  rotate: false
+  xy: 1135, 336
+  size: 179, 171
+  orig: 179, 171
+  offset: 0, 0
+  index: -1
+Dfx4
+  rotate: false
+  xy: 937, 312
+  size: 196, 195
+  orig: 196, 195
+  offset: 0, 0
+  index: -1
+Dfx5
+  rotate: true
+  xy: 721, 298
+  size: 209, 214
+  orig: 209, 214
+  offset: 0, 0
+  index: -1
+Dfx6
+  rotate: false
+  xy: 259, 286
+  size: 219, 221
+  orig: 219, 221
+  offset: 0, 0
+  index: -1
+Dfx7
+  rotate: false
+  xy: 2, 40
+  size: 229, 231
+  orig: 229, 231
+  offset: 0, 0
+  index: -1
+FireSpark
+  rotate: false
+  xy: 937, 304
+  size: 27, 6
+  orig: 27, 6
+  offset: 0, 0
+  index: -1
+Firegas
+  rotate: true
+  xy: 1992, 386
+  size: 121, 53
+  orig: 121, 53
+  offset: 0, 0
+  index: -1
+Fx1
+  rotate: true
+  xy: 824, 239
+  size: 57, 87
+  orig: 57, 87
+  offset: 0, 0
+  index: -1
+Fx2
+  rotate: true
+  xy: 710, 211
+  size: 85, 112
+  orig: 85, 112
+  offset: 0, 0
+  index: -1
+Fx3
+  rotate: true
+  xy: 480, 207
+  size: 109, 131
+  orig: 109, 131
+  offset: 0, 0
+  index: -1
+Fx4
+  rotate: true
+  xy: 1838, 382
+  size: 125, 152
+  orig: 125, 152
+  offset: 0, 0
+  index: -1
+Fx5
+  rotate: true
+  xy: 1502, 374
+  size: 133, 170
+  orig: 133, 170
+  offset: 0, 0
+  index: -1
+Fx6
+  rotate: true
+  xy: 1316, 373
+  size: 134, 184
+  orig: 134, 184
+  offset: 0, 0
+  index: -1
+Gun
+  rotate: true
+  xy: 1470, 280
+  size: 91, 50
+  orig: 91, 50
+  offset: 0, 0
+  index: -1
+PlaneFx1
+  rotate: true
+  xy: 1316, 282
+  size: 89, 152
+  orig: 89, 152
+  offset: 0, 0
+  index: -1
+PlaneFx2
+  rotate: false
+  xy: 2, 2
+  size: 45, 36
+  orig: 45, 36
+  offset: 0, 0
+  index: -1
+PlaneFx3
+  rotate: false
+  xy: 1522, 315
+  size: 65, 57
+  orig: 65, 57
+  offset: 0, 0
+  index: -1
+PlaneFx4
+  rotate: false
+  xy: 824, 211
+  size: 29, 26
+  orig: 29, 26
+  offset: 0, 0
+  index: -1
+Wing
+  rotate: false
+  xy: 2, 273
+  size: 255, 234
+  orig: 255, 234
+  offset: 0, 0
+  index: -1

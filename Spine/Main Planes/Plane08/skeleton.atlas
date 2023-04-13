@@ -1,0 +1,111 @@
+
+skeleton.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 665, 104
+  size: 258, 150
+  orig: 258, 150
+  offset: 0, 0
+  index: -1
+Canon
+  rotate: false
+  xy: 1709, 201
+  size: 136, 53
+  orig: 136, 53
+  offset: 0, 0
+  index: -1
+Dfx1
+  rotate: false
+  xy: 1468, 159
+  size: 123, 95
+  orig: 123, 95
+  offset: 0, 0
+  index: -1
+Dfx2
+  rotate: false
+  xy: 1304, 126
+  size: 162, 128
+  orig: 162, 128
+  offset: 0, 0
+  index: -1
+Dfx3
+  rotate: false
+  xy: 1123, 83
+  size: 179, 171
+  orig: 179, 171
+  offset: 0, 0
+  index: -1
+Dfx4
+  rotate: false
+  xy: 925, 59
+  size: 196, 195
+  orig: 196, 195
+  offset: 0, 0
+  index: -1
+Dfx5
+  rotate: false
+  xy: 454, 40
+  size: 209, 214
+  orig: 209, 214
+  offset: 0, 0
+  index: -1
+Dfx6
+  rotate: false
+  xy: 233, 33
+  size: 219, 221
+  orig: 219, 221
+  offset: 0, 0
+  index: -1
+Dfx7
+  rotate: false
+  xy: 2, 23
+  size: 229, 231
+  orig: 229, 231
+  offset: 0, 0
+  index: -1
+Misile
+  rotate: false
+  xy: 1304, 2
+  size: 147, 122
+  orig: 147, 122
+  offset: 0, 0
+  index: -1
+Piece-1
+  rotate: true
+  xy: 1593, 159
+  size: 95, 114
+  orig: 95, 114
+  offset: 0, 0
+  index: -1
+Piece-2
+  rotate: false
+  xy: 1847, 182
+  size: 93, 72
+  orig: 93, 72
+  offset: 0, 0
+  index: -1
+Piece-3
+  rotate: false
+  xy: 845, 69
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1
+Piece-4
+  rotate: true
+  xy: 233, 2
+  size: 29, 22
+  orig: 29, 22
+  offset: 0, 0
+  index: -1
+Wing-Canon
+  rotate: false
+  xy: 665, 44
+  size: 178, 58
+  orig: 178, 58
+  offset: 0, 0
+  index: -1

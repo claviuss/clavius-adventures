@@ -1,0 +1,69 @@
+{
+"skeleton": { "hash": "cPWW2IMPA6dPXoOlCUKrvejRjbA", "spine": "3.7.87", "width": 180, "height": 164.12, "images": "./Images/", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "Body", "bone": "root", "attachment": "Body" },
+	{ "name": "Face01", "bone": "root", "attachment": "Face01" },
+	{ "name": "Eye01", "bone": "root", "attachment": "Eye01" },
+	{ "name": "Hat", "bone": "root", "attachment": "Hat" }
+],
+"skins": {
+	"default": {
+		"Body": {
+			"Body": { "x": 4, "y": 36.68, "width": 180, "height": 73 }
+		},
+		"Eye01": {
+			"Eye01": { "x": 3.14, "y": 120.58, "width": 40, "height": 20 },
+			"Eye02": { "x": 4.11, "y": 118.39, "width": 42, "height": 17 }
+		},
+		"Face01": {
+			"Face01": { "x": 2.32, "y": 101, "width": 74, "height": 85 },
+			"Face02": { "x": 2.34, "y": 100.61, "width": 74, "height": 85 },
+			"Face03": { "x": 2.59, "y": 100.35, "width": 74, "height": 85 },
+			"Face04": { "x": 2.08, "y": 100.61, "width": 74, "height": 85 }
+		},
+		"Hat": {
+			"Hat": { "x": 2.59, "y": 144.3, "width": 68, "height": 40 }
+		}
+	}
+},
+"animations": {
+	"LoopTalk": {
+		"slots": {
+			"Eye01": {
+				"attachment": [
+					{ "time": 0.3333, "name": "Eye02" },
+					{ "time": 0.4, "name": "Eye01" }
+				]
+			},
+			"Face01": {
+				"attachment": [
+					{ "time": 0, "name": "Face02" },
+					{ "time": 0.1667, "name": "Face03" },
+					{ "time": 0.3333, "name": "Face02" },
+					{ "time": 0.5, "name": "Face04" },
+					{ "time": 0.6667, "name": "Face02" }
+				]
+			}
+		}
+	},
+	"animation": {
+		"slots": {
+			"Face01": {
+				"attachment": [
+					{ "time": 0.1667, "name": "Face02" },
+					{ "time": 0.2667, "name": "Face03" },
+					{ "time": 0.3333, "name": "Face04" },
+					{ "time": 0.5, "name": "Face02" },
+					{ "time": 0.6667, "name": "Face04" },
+					{ "time": 0.8333, "name": "Face03" },
+					{ "time": 1, "name": "Face04" },
+					{ "time": 1.3333, "name": "Face01" }
+				]
+			}
+		}
+	}
+}
+}

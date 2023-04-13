@@ -1,0 +1,139 @@
+
+skeleton.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 218, 6
+  size: 207, 162
+  orig: 207, 162
+  offset: 0, 0
+  index: -1
+Body2
+  rotate: false
+  xy: 802, 320
+  size: 252, 162
+  orig: 252, 162
+  offset: 0, 0
+  index: -1
+DFx10
+  rotate: false
+  xy: 382, 42
+  size: 70, 38
+  orig: 70, 38
+  offset: 0, 0
+  index: -1
+Dfx1
+  rotate: false
+  xy: 1508, 285
+  size: 123, 95
+  orig: 123, 95
+  offset: 0, 0
+  index: -1
+Dfx2
+  rotate: false
+  xy: 1508, 382
+  size: 162, 128
+  orig: 162, 128
+  offset: 0, 0
+  index: -1
+Dfx3
+  rotate: false
+  xy: 1056, 311
+  size: 179, 171
+  orig: 179, 171
+  offset: 0, 0
+  index: -1
+Dfx4
+  rotate: false
+  xy: 382, 82
+  size: 196, 195
+  orig: 196, 195
+  offset: 0, 0
+  index: -1
+Dfx5
+  rotate: true
+  xy: 2, 4
+  size: 209, 214
+  orig: 209, 214
+  offset: 0, 0
+  index: -1
+Dfx6
+  rotate: false
+  xy: 581, 289
+  size: 219, 221
+  orig: 219, 221
+  offset: 0, 0
+  index: -1
+Dfx7
+  rotate: false
+  xy: 350, 279
+  size: 229, 231
+  orig: 229, 231
+  offset: 0, 0
+  index: -1
+Dfx8
+  rotate: false
+  xy: 2, 215
+  size: 346, 295
+  orig: 346, 295
+  offset: 0, 0
+  index: -1
+Fx1
+  rotate: true
+  xy: 1959, 453
+  size: 57, 87
+  orig: 57, 87
+  offset: 0, 0
+  index: -1
+Fx2
+  rotate: true
+  xy: 802, 233
+  size: 85, 112
+  orig: 85, 112
+  offset: 0, 0
+  index: -1
+Fx3
+  rotate: true
+  xy: 1826, 401
+  size: 109, 131
+  orig: 109, 131
+  offset: 0, 0
+  index: -1
+Fx4
+  rotate: true
+  xy: 1672, 385
+  size: 125, 152
+  orig: 125, 152
+  offset: 0, 0
+  index: -1
+Fx5
+  rotate: false
+  xy: 1373, 340
+  size: 133, 170
+  orig: 133, 170
+  offset: 0, 0
+  index: -1
+Fx6
+  rotate: false
+  xy: 1237, 326
+  size: 134, 184
+  orig: 134, 184
+  offset: 0, 0
+  index: -1
+Gun
+  rotate: false
+  xy: 382, 2
+  size: 70, 38
+  orig: 70, 38
+  offset: 0, 0
+  index: -1
+Tentacle
+  rotate: false
+  xy: 802, 484
+  size: 407, 26
+  orig: 407, 26
+  offset: 0, 0
+  index: -1
