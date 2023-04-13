@@ -9,7 +9,8 @@ import { Player } from './elements/player';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  @ViewChild('pixiGameContainer', { static: false }) pixiGameContainer: ElementRef
+  // if you want to use structural directives, we should use static false (for eg. ngIf, ngFor...)
+  @ViewChild('pixiGameContainer', { static: true }) pixiGameContainer: ElementRef
 
   game = new Application({ width: 1920, height: 1080, backgroundAlpha: 0 });
   loading = 0;
@@ -20,7 +21,6 @@ export class AppComponent implements OnInit {
   player: Player;
 
   ngOnInit(): void {
-
     this.loadAssets()
   }
 
@@ -63,13 +63,20 @@ export class AppComponent implements OnInit {
     }
     Assets.addBundle('playerPlaneDestroyed', playerPlaneDestroyed)
 
+    // #Player - Projectile
+    const playerProjectiles: ResolverAssetsObject = {}
+    for (let i = 0; i < 15; i++) {
+      playerProjectiles[`player-projectiles-${i + 1}`] = `assets/projectile/${i + 1 < 10 ? 0 : ''}${i + 1}.png`
+    }
+    Assets.addBundle('playerProjectiles', playerProjectiles)
 
     this.gameAssets = await Assets.loadBundle([
       'commanderTalk01',
       'enemyAnimation',
       'planeIdelMoving',
       'playerPlaneGetHitAssets',
-      'playerPlaneDestroyed'
+      'playerPlaneDestroyed',
+      'playerProjectiles'
     ], (loadingPercentage) => {
       this.loading = Math.floor(loadingPercentage * 100);
     })
@@ -114,11 +121,18 @@ export class AppComponent implements OnInit {
     this.game.view.style!.height = '100%';
 
     this.pixiGameContainer.nativeElement.appendChild(this.game.view);
+    // change detection   
+
+    console.log("THIS", this.gameAssets)
 
     const idleAndMoving = Object.values<PIXI.Texture>(this.gameAssets.planeIdelMoving)
     const getHit = Object.values<PIXI.Texture>(this.gameAssets.playerPlaneGetHitAssets)
     const destroyed = Object.values<PIXI.Texture>(this.gameAssets.playerPlaneDestroyed)
-    this.player = new Player(this.game.stage, idleAndMoving, getHit, destroyed);
+    const playerProjectiles = Object.values<PIXI.Texture>(this.gameAssets.playerProjectiles)
+
+    // !
+    this.player = new Player(this.game.stage, idleAndMoving, getHit, destroyed, playerProjectiles);
+
 
     this.game.ticker.minFPS = 60
     this.game.ticker.maxFPS = 60
