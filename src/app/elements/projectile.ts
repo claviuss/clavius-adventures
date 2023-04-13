@@ -26,14 +26,12 @@ export class Projectile {
         this.projectile.y = position.y
         this.container.addChild(this.projectile) //!
 
-        console.log("te", texture)
     }
 
     update(dt: number) {
         if (this.projectile.alpha < 1) {
             this.projectile.alpha += 0.4
         }
-        console.log('a')
         this.velocity += 0.5
         this.projectile.position.x += this.velocity;
 
@@ -44,7 +42,7 @@ export class Projectile {
         return { x, y }
     }
 
-    remove(){
+    remove() {
         this.container.removeChild(this.projectile) //!
 
     }

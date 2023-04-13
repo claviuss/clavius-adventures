@@ -1,6 +1,5 @@
-import { HostListener } from '@angular/core';
 import * as PIXI from 'pixi.js';
-import { AnimatedSprite } from 'pixi.js';
+import { AnimatedSprite, Sprite } from 'pixi.js';
 import { Projectile } from './projectile';
 
 export enum PlayerMoveDirection {
@@ -31,13 +30,17 @@ export class Player {
 
     private firedProjectiles: Projectile[] = []
 
+    private ammoType = 0;
+    private ammo: PIXI.Sprite;
+
     constructor(
         container: PIXI.Container,
         idleAndMoving: PIXI.Texture[],
         getHit: PIXI.Texture[],
         destroyed: PIXI.Texture[],
 
-        projectiles: PIXI.Texture[]
+        projectiles: PIXI.Texture[],
+
     ) {
         this.container = container;
 
@@ -58,7 +61,6 @@ export class Player {
 
         window.addEventListener("keydown", (event) => this.onKeyDown(event), false);
 
-        // !
         this.player.onComplete = () => {
             if (this.playerAnimation === PlayerAnimation.GET_HIT) {
                 this.playerAnimation = PlayerAnimation.IDLE_MOVING
@@ -75,6 +77,13 @@ export class Player {
             }
 
         }
+
+        this.ammo = new Sprite(projectiles[this.ammoType])
+        this.ammo.scale.set(0.5)
+        this.ammo.position.set(1720, 90)
+        this.ammo.rotation = -0.5;
+        this.ammo.anchor.set(0.5)
+        this.container.addChild(this.ammo)
     }
 
     update(dt: number) {
@@ -99,7 +108,6 @@ export class Player {
                 const projectile = this.firedProjectiles[key];
 
                 const { x, y } = projectile.getPosition();
-                console.log('--->', x, y, key, +key)
                 if (x > 1920) {
                     projectile.remove()
 
@@ -108,20 +116,11 @@ export class Player {
                 } else {
                     projectile.update(dt);
                 }
-
-                console.log("firedProjectiles", this.firedProjectiles.length)
-
-
-                console.log("firedProjectiles", this.firedProjectiles.length)
-
             }
         }
-
-
     }
 
     onKeyDown(event: KeyboardEvent) {
-        console.log("event", event)
         if (event.key === 's' || event.key === 'S' || event.key === 'ArrowDown') {
             this.playerMoving = PlayerMoveDirection.DOWN
         }
@@ -162,14 +161,19 @@ export class Player {
         }
 
         if (event.key === ' ') {
-            console.log("this.projectiles", this.projectiles, this.player.position)
             let { x, y } = this.player.position;
-            console.log(x, y)
             x += 125
             y += 150
-            const projectile = new Projectile(this.container, this.projectiles[0], { x, y })
+            const projectile = new Projectile(this.container, this.projectiles[this.ammoType], { x, y })
             this.firedProjectiles.push(projectile)
-            console.log('here')
+        }
+
+        if (event.key === 'c') {
+            this.ammoType += 1;
+            if (this.ammoType > 14) {
+                this.ammoType = 0
+            }
+            this.ammo.texture = this.projectiles[this.ammoType]
         }
     }
 
